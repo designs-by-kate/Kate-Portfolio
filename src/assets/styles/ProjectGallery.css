@@ -1,0 +1,40 @@
+/* ProjectGallery.css */
+.container {
+    background-color: black;
+    color: white;
+  }
+.project-gallery {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  
+  .project-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project-image {
+    width: 100%;
+    min-height: 300px; /* Set a minimum height for the image */
+    max-height: 300px;
+    object-fit: cover; /* Ensure the image fills the container while maintaining aspect ratio */
+    transition: opacity 0.3s ease-in-out; /* Add transition for opacity */
+  }
+
+  .project-image:hover {
+    opacity: 0.4; /* Set the opacity when hovered */
+  }
+  
+  .project-title {
+    margin-top: 0;
+    color: green;
+    transition: color 0.3s ease-in-out; /* Add transition for color */
+  }
+
+  .project-card:hover .project-title {
+    color: #ff6347; /* Change the color when title is hovered */
+  }
+
+  .project-link {
+    text-decoration: none; /* Remove underline decoration from links */
+  }

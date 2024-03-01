@@ -1,0 +1,29 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "Project 1",
+        "description": "A description of Project 1.",
+        "deployedURL": "https://example.com/project1",
+        "gitHubUrl": "https://github.com/user/project1",
+        "image": "project1.jpg",
+        "projectType": "Web Application",
+        "role": "sole author/ group project",
+        "dependencies": ["React", "Redux", "Bootstrap"],
+        "tools": ["HTML", "CSS", "JavaScript", "React"]
+      },
+      {
+        "id": 2,
+        "title": "Project 2",
+        "description": "A description of Project 2.",
+        "deployedURL": "https://example.com/project2",
+        "gitHubUrl": "https://github.com/user/project2",
+        "image": "../../assets/images/LogoBW.png",
+        "projectType": "Mobile App",
+        "role": "sole author/ group project",
+        "dependencies": ["React Native", "Expo"],
+        "tools": ["JavaScript", "React Native"]
+      }
+    ]
+  }
+  
