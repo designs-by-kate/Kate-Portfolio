@@ -1,5 +1,6 @@
 // pages/ProjectGallery.jsx
 import React from 'react';
+import '../../assets/styles/ProjectGallery.css'; 
 
 const ProjectGallery = () => {
   return (
