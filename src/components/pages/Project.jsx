@@ -1,5 +1,6 @@
 // pages/Project.jsx
 import React from 'react';
+import '../../assets/styles/Project.css'; 
 
 const Project = () => {
   return (
