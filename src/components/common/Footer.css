@@ -1,0 +1,28 @@
+/* styles/Footer.css */
+.footer {
+    width: 100%;
+    background-color: #f0f0f0; /* Add your desired background color */
+    padding: 20px;
+    color: #555; /* Add your desired text color */
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icons {
+    margin-bottom: 15px;
+  }
+
+  .social-icons a {
+    margin-right: 15px;
+    font-size: 48px;
+    color: #555; /* Add your desired icon color */
+    text-decoration: none;
+  }
+  
+  /* Add any additional styling as needed */
+  
