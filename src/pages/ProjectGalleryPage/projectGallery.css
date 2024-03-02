@@ -1,40 +1,75 @@
 /* ProjectGallery.css */
+
 .container {
-    background-color: black;
-    color: white;
-  }
+  background-color: black;
+  color: white;
+}
+
 .project-gallery {
-    max-width: 1500px;
-    margin: 0 auto;
-  }
-  
-  .project-card {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .project-image {
-    width: 100%;
-    min-height: 300px; /* Set a minimum height for the image */
-    max-height: 300px;
-    object-fit: cover; /* Ensure the image fills the container while maintaining aspect ratio */
-    transition: opacity 0.3s ease-in-out; /* Add transition for opacity */
-  }
+  max-width: 1500px;
+  margin: 0 auto;
+}
 
-  .project-image:hover {
-    opacity: 0.4; /* Set the opacity when hovered */
-  }
-  
-  .project-title {
-    margin-top: 0;
-    color: green;
-    transition: color 0.3s ease-in-out; /* Add transition for color */
-  }
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
 
-  .project-card:hover .project-title {
-    color: #ff6347; /* Change the color when title is hovered */
-  }
+.project-image {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  transition: filter 0.3s ease-in-out; /* Change transition to filter for image */
+}
 
-  .project-link {
-    text-decoration: none; /* Remove underline decoration from links */
-  }
+.project-image:hover {
+  filter: brightness(70%); /* Adjust brightness to darken the image */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  background-color: black; /* Add a black background to the overlay */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay a {
+  color: white;
+  text-decoration: none; /* Remove underline decoration from links */
+  transition: color 0.3s ease-in-out; /* Add transition for color */
+}
+
+.project-card:hover .overlay a {
+  color: #ff6347; /* Change the color when the overlay is hovered */
+}
+
+.project-title {
+  margin-top: 0;
+  text-align: center;
+}
+
+.project-title a {
+  color: green;
+  text-decoration: none; /* Remove underline decoration from links */
+  transition: color 0.3s ease-in-out; /* Add transition for color */
+}
+
+.project-card:hover .project-title a {
+  color: #ff6347; /* Change the color when title is hovered */
+}

@@ -14,14 +14,15 @@ function ProjectGallery() {
     <div className="row">
       {projectData.map(project => (
         <div key={project.id} className="col-12 col-md-6 col-lg-4 mb-4">
-          <Link to={`/project/${project.id}`} className="project-link">
             <div className="project-card">
               <img src={project.image} alt={project.title} className="project-image img-fluid" />
+              <div className="overlay">
+                <a href={project.deployedURL} target="_blank" rel="noopener noreferrer">Click Here to see deployed {project.title}</a>
+              </div>
               <div className="project-details">
                 <h3 className="project-title text-center">{project.title}</h3>
               </div>
             </div>
-          </Link>
         </div>
       ))}
     </div>

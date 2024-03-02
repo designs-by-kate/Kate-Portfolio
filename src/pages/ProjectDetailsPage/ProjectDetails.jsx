@@ -1,10 +1,9 @@
 // pages/Project.jsx
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import './projects.css';
+import React, { useState } from 'react';
+import './projectDetails.css';
 import project from '../../data/project.json';
 
-function Project() {
+function ProjectDetails() {
 
   const [projectData, setProjectData] = useState(project);
 
@@ -15,7 +14,7 @@ function Project() {
       <div className="row">
         {projectData.map(project => (
           <div key={project.id} className="col-12 mb-4">
-            <h3 className="project-title text-center">{project.title}</h3>
+            <h3 id={project.id} className="project-title text-center">{project.title}</h3>
             <div className="row">
               <div className="col-md-2">
                 <img src={project.image} alt={project.title} className="project-image img-fluid" />
@@ -37,4 +36,4 @@ function Project() {
   );
 };
 
-export default Project;
+export default ProjectDetails;
