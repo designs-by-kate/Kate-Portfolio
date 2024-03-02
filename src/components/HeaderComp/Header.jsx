@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../assets/images/LogoBW.png';
-import Search from './Search'; 
-import '../../assets/styles/Header.css'; 
+import Search from '../SearchComp/Search'; 
+import './header.css'; 
 
 const Header = () => {
   return (

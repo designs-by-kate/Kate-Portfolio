@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import '../../assets/styles/Search.css'; 
+import './search.css'; 
 
 const Search = () => {
   const searchInputRef = useRef(null);

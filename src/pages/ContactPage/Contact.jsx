@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/styles/Contact.css';
+import './contact.css';
 
 const Contact = () => {
   // Dummy contact information

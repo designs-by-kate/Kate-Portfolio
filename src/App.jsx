@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'; // Import global styles
-import Nav from './components/navigation/Nav';
-import Header from './components/common/Header';
-import Footer from './components/common/Footer';
-import Home from './components/pages/Home';
-import About from './components/pages/About';
-import ProjectGallery from './components/pages/ProjectGallery';
-import Project from './components/pages/Project';
-import Contact from './components/pages/Contact';
+import Nav from './components/NavComp/Nav';
+import Header from './components/HeaderComp/Header';
+import Footer from './components/FooterComp/Footer';
+import Home from './pages/HomePage/Home';
+import About from './pages/AboutPage/About';
+import ProjectGallery from './pages/ProjectGalleryPage/ProjectGallery';
+import Project from './pages/ProjectsPage/Projects';
+import Contact from './pages/ContactPage/Contact';
 
 function App() {
   return (

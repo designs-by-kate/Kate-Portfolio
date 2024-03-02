@@ -1,7 +1,7 @@
 // pages/Project.jsx
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../../assets/styles/Project.css';
+import './projects.css';
 import project from '../../data/project.json';
 
 function Project() {

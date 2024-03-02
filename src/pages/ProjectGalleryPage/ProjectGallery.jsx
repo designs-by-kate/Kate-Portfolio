@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../../assets/styles/ProjectGallery.css';
+import './projectGallery.css';
 import project from '../../data/project.json';
 
 function ProjectGallery() {
