@@ -38,12 +38,12 @@ function Nav() {
             </li>
             <li className="nav-item">
                 <NavLink
-                    to="project"
+                    to="projectDetails"
                     className={({ isActive }) =>
                         isActive ? 'nav-link active' : 'nav-link'
                     }
                 >
-                    Project
+                    Project Details
                 </NavLink>
             </li>
             <li className="nav-item">
