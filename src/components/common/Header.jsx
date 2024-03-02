@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../assets/images/LogoBW.png';
+import Search from './Search'; 
 import '../../assets/styles/Header.css'; 
 
 const Header = () => {
@@ -13,8 +14,9 @@ const Header = () => {
           <h1>Kate's Portfolio</h1>
         </div>
         <div className="search-container">
-          <input type="text" placeholder="Search..." className="search-input" />
-          <button className="search-button">Search</button>
+          {/* <input type="text" placeholder="Search..." className="search-input" />
+          <button className="search-button">Search</button> */}
+          <Search />
         </div>
       </div>
     </header>
