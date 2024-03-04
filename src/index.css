@@ -1,14 +1,10 @@
 * {
   box-sizing: border-box;
-}
-
-html,
-body,
-#root,
-#root > div,
-div[data-reactroot] {
-  height: 100%;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
