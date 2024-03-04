@@ -12,7 +12,7 @@ import { Contact } from "./components/Contact/Contact";
 import { Skills } from "./components/Skills/Skills";
 // import { NavLink } from 'react-router-dom';
 
-const validRoutes = ['/Portfolio/', '/about', '/skills', '/experience', '/projects', '/contact'];
+const validRoutes = ['/Kate-Portfolio/', '/about', '/skills', '/experience', '/projects', '/contact'];
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -24,7 +24,7 @@ const ScrollToTop = () => {
 
   // Add logic to redirect to home page if the path is not recognized
   if (!validRoutes.includes(pathname)) {
-    return <Navigate to="/Portfolio/" replace />;
+    return <Navigate to="/Kate-Portfolio/" replace />;
   }
 
   return null; // This component doesn't render anything
@@ -37,7 +37,7 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/Portfolio/" element={<Hero />} />
+          <Route path="/Kate-Portfolio/" element={<Hero />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/experience" element={<Experience />} />
