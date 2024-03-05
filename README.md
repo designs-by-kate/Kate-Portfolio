@@ -54,8 +54,6 @@ Welcome to my portfolio website! This one-page site showcases my skills, experie
 ![image](https://github.com/designs-by-kate/Kate-Portfolio/assets/146155569/2a234a1e-cccb-4242-b4c5-ce06c596942e)
 
 
-
-
 ## Technologies
 - HTML
 - CSS
